@@ -1,7 +1,7 @@
 
 # Fetch a List of Pets
 
-This section describes the procedure to fetch a list of pets from the Swagger [Pet store API](https://petstore.swagger.io/) through API interaction.
+This section describes the procedure to fetch a list of pets from the  [Swagger Pet store API](https://petstore.swagger.io/) through API interaction.
 
 #### Endpoint
        GET /pet/findByStatus
@@ -58,6 +58,6 @@ The following is an example of a successful  response with status **available**:
     ],
      }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTE1NTgzMjEsMTEwNTcxMDA3NiwxNz
-czNDQzNjg2LDE0NTAwMTE4NjhdfQ==
+eyJoaXN0b3J5IjpbMTQ4MDkxMjQ5NSwtMTExMTU1ODMyMSwxMT
+A1NzEwMDc2LDE3NzM0NDM2ODYsMTQ1MDAxMTg2OF19
 -->
