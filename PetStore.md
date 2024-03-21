@@ -15,15 +15,16 @@ Multiple status values can be provided with comma separated strings.
 
 | Name|Description|Type  |Default|
 |--------|-------------------------------------------------------------------------------------------|------|------------|
-| *status |Status values that need to be considered for filter (values are: available, pending, sold). The field is mandatory |query | available
+| status |Status values that need to be considered for filter (values are: available, pending, sold). The field is mandatory |query | available
 
 
 ### Request
-https://petstore.swagger.io/v2/pet/findByStatus?status='status'
 
-#### Example Request
-Request URL to find pets with the status **available**: 
+#### cURL Request
+//Request URL to find pets with the status **available**: 
 https://petstore.swagger.io/v2/pet/findByStatus?status=available
+#### Example Request
+
 
 
 ### Response
@@ -59,6 +60,6 @@ The following is an example of a successful  response with status **available**:
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IFBldFN0b3JlXG5hdXRob3
 I6IFRydXB0aVxuc3RhdHVzOiBGcnN0IGRyYWZ0XG5kYXRlOiAy
-Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbLTIwODI5MDg5MTIsOD
-E2NTAyNDA2XX0=
+Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbMTYyMzc0ODM3Miw4MT
+Y1MDI0MDZdfQ==
 -->
