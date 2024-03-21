@@ -26,9 +26,8 @@ For this sample, use the API key `special-key` to test the authorization filters
           'https://petstore.swagger.io/v2/pet/findByStatus?status=available' \
           -H 'accept: application/xml
           
-   ###
-
-#### Java
+          
+   #### Java
 // This code sample uses the 'Unirest' library: 
 // http://unirest.io/java.html 
 
@@ -94,7 +93,7 @@ he following is an example of a successful  response with status **available** i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjg2ODAxMzQsLTExNjQyMzk0OTAsLT
-E2MzUyMDM4NjgsMTQ4MDkxMjQ5NSwtMTExMTU1ODMyMSwxMTA1
-NzEwMDc2LDE3NzM0NDM2ODYsMTQ1MDAxMTg2OF19
+eyJoaXN0b3J5IjpbMTg2Mjg3MDYzMSwtMTE2NDIzOTQ5MCwtMT
+YzNTIwMzg2OCwxNDgwOTEyNDk1LC0xMTExNTU4MzIxLDExMDU3
+MTAwNzYsMTc3MzQ0MzY4NiwxNDUwMDExODY4XX0=
 -->
