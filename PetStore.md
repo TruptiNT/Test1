@@ -10,8 +10,8 @@
 
 <body class="stackedit">
   <div class="stackedit__html"><p>Get List of PetsThis section describes the procedure to fetch a list of pets from the  <a href="https://petstore.swagger.io/">Swagger Pet store API</a> through API interaction.</p>
-<h3 id="description">Description</h3>
-<p>Finds pets by status.<br>
+
+### DescriptionFinds pets by status.<br>
 Multiple status values can be provided with comma separated strings.<br>
 For this sample, use the API key <code>special-key</code> to test the authorization filters.</p>
 <h3 id="endpoint">Endpoint</h3>
@@ -22,7 +22,7 @@ For this sample, use the API key <code>special-key</code> to test the authorizat
 <thead>
 <tr>
 <th>Name</th>
-<th>Description</th>
+<th>Description
 <th>Type</th>
 <th>Default</th>
 </tr>
@@ -35,7 +35,7 @@ For this sample, use the API key <code>special-key</code> to test the authorizat
 <td>available</td>
 </tr>
 </tbody>
-</table><h4 id="example-requesth4">Example Request</h4>
+</table><h4 id="example-requesth4">4 id="examplerequesth4">Example Request</h4>
 <p>
 Request URL to find pets with the status <strong>**available</strong>:<br>
 <a href="https://petstore.swagger.io/v2/pet/findByStatus?status=available">https://petstore.swagger.io/v2/pet/findByStatus?status=available</a></p>
@@ -61,12 +61,12 @@ Request URL to find pets with the status <strong>**available</strong>:<br>
 </table><h4 id="example-response">**: 
 https://petstore.swagger.io/v2/pet/findByStatus?status=available
 </h4><h3 id="response">Response</h3>
-<h4 id="response-codes">Response Codes</h4>
-<p>| HTTP Code       |Description    }<br>
+<h4 id="response-codes">Response Codes</h4>| HTTP Code       |Description    }<br>
 |<br>
 |--------------|-------------------------------|<br>
-|200           |Successful operation<br>
-|400           |Invalid Status codeExample Response</p>
+|200    
+||Successful operation
+|400           |Invalid Status codeExample Response</>
 <p>
 The following is an example of a successful  response with status <strong>**available</strong>:</p>
 <pre><code>{
@@ -104,3 +104,9 @@ The following is an example of a successful  response with status <strong>**avai
 </body>
 
 </html>
+<!--stackedit_data:
+eyJwcm9wZXJ0aWVzIjoidGl0bGU6IFBldFN0b3JlXG5hdXRob3
+I6IFRydXB0aVxuc3RhdHVzOiBGcnN0IGRyYWZ0XG5kYXRlOiAy
+Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbLTE1NDA2NTc1NTldfQ
+==
+-->
