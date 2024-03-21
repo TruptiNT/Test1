@@ -9,6 +9,7 @@ This section describes the procedure to fetch a list of pets from the Swagger [P
 #### Description
 Finds pets by status.
 Multiple status values can be provided with comma separated strings.
+For this sample, you can use the API key `special-key` to test the authorization filters.
 
 #### Parameters
 
@@ -53,5 +54,6 @@ The following is an example of a successful  response with status **available**:
     ],
      }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MzQ0MzY4NiwxNDUwMDExODY4XX0=
+eyJoaXN0b3J5IjpbMTEwNTcxMDA3NiwxNzczNDQzNjg2LDE0NT
+AwMTE4NjhdfQ==
 -->
