@@ -3,7 +3,7 @@
 # Fetch a List of Pets
 
 This section describes the procedure to fetch a list of pets from the [Swagger Pet store API](https://petstore.swagger.io/) through API interaction.
-The request shows a list of pets by status.
+
 
 ### Endpoint
        GET /pet/findByStatus
@@ -21,16 +21,6 @@ Multiple status values can be provided with comma separated strings.
 | N/A|N/A|header|  
 |N/A| N/A|path| 
 
-### Response Content Type
--   application/xml
--   application/json
-
-### Response Code
-
-| HTTP Code       |Description                          |           
-|--------------|-------------------------------|
-|200           |Successful operation   
-|400           |Invalid Status code
 
 ### Sample Request
 
@@ -45,6 +35,16 @@ Multiple status values can be provided with comma separated strings.
 
     HttpResponse<String> response = Unirest.get("https://petstore.swagger.io/v2/pet/findByStatus") .header("Accept", "application/xml") .queryString("status", "{status}") .asString(); System.out.println(response.getBody());
 
+### Response Content Type
+-   application/xml
+-   application/json
+
+### Response Code
+
+| HTTP Code       |Description                          |           
+|--------------|-------------------------------|
+|200           |Successful operation   
+|400           |Invalid Status code
 
 ### Sample Response
 
@@ -98,6 +98,6 @@ The following is an example of a successful  response with status **available**:
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IFBldFN0b3JlXG5hdXRob3
 I6IFRydXB0aVxuc3RhdHVzOiBGcnN0IGRyYWZ0XG5kYXRlOiAy
-Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbODI3NDg4NDk5LC02Nj
-cxNjY1OTZdfQ==
+Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbLTEzNDI4MTk0MDgsLT
+Y2NzE2NjU5Nl19
 -->
