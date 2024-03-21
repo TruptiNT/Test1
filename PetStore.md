@@ -18,9 +18,8 @@ Multiple status values can be provided with comma separated strings.
 | Name|Description|Type  |Default|
 |--------|-------------------------------------------------------------------------------------------|------|------------|
 | status |Status values that need to be considered for filter (values are: available, pending, sold). The field is mandatory |query | available
-| N/A|Nones mandatory |header| available
-| status |Status values that need to be considered for filter (values are: available, pending, sold). The field is mandatory |query | available
-| status |Status values that need to be considered for filter (values are: available, pending, sold). The field is mandatory |query | available
+| N/A|N/A|header|  
+|N/A| N/A|path| 
 
 
 ### Request
@@ -110,6 +109,6 @@ In Postman, enter the URL:
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IFBldFN0b3JlXG5hdXRob3
 I6IFRydXB0aVxuc3RhdHVzOiBGcnN0IGRyYWZ0XG5kYXRlOiAy
-Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbLTE0MzU5MzQzNjAsLT
-E5MjQ1ODc1NDUsODE2NTAyNDA2XX0=
+Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbNDg1MTMxMDA0LC0xOT
+I0NTg3NTQ1LDgxNjUwMjQwNl19
 -->
