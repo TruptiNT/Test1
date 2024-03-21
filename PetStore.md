@@ -25,8 +25,6 @@ https://petstore.swagger.io/v2/pet/findByStatus?status='status'
 Request URL to find pets with the status **available**: 
 https://petstore.swagger.io/v2/pet/findByStatus?status=available
 
-
-### Response
 #### curl
 
      curl -X 'GET' \
@@ -39,6 +37,7 @@ https://petstore.swagger.io/v2/pet/findByStatus?status=available
 
     HttpResponse<String> response = Unirest.get("https://petstore.swagger.io/v2/pet/findByStatus") .header("Accept", "application/xml") .queryString("status", "{status}") .asString(); System.out.println(response.getBody());
 
+### Response
 #### Response Codes
 
 | HTTP Code       |Description                          |           
@@ -93,7 +92,7 @@ he following is an example of a successful  response with status **available** i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwOTI3NzM0OSwtMTE2NDIzOTQ5MCwtMT
+eyJoaXN0b3J5IjpbMTg5NjI0MjA3MSwtMTE2NDIzOTQ5MCwtMT
 YzNTIwMzg2OCwxNDgwOTEyNDk1LC0xMTExNTU4MzIxLDExMDU3
 MTAwNzYsMTc3MzQ0MzY4NiwxNDUwMDExODY4XX0=
 -->
