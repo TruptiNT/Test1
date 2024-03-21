@@ -30,7 +30,7 @@ The sample request URL  retrieves pets with the status **available**:
     https://petstore.swagger.io/v2/pet/findByStatus?status=available
 
 #### Request in Java 
-The sample request uses the 'Unirest' library  http://unirest.io/java.html  to retrieive pets with status **available**
+The sample request uses the 'Unirest' library  http://unirest.io/java.html  to retrieve pets with status **available**
 
     HttpResponse<String> response = Unirest.get("https://petstore.swagger.io/v2/pet/findByStatus") .header("Accept", "application/xml") .queryString("status", "{status}") .asString(); System.out.println(response.getBody());
 
@@ -49,7 +49,7 @@ The sample request uses the 'Unirest' library  http://unirest.io/java.html  to r
 
 #### cURL
 
-The following is an example of a successful  response with status **available**:
+The following is an example of a successful response with 2 records with status **available**:
 
     {
     "id": 1234,
@@ -67,7 +67,25 @@ The following is an example of a successful  response with status **available**:
      "name": "string"
      }
     ],
+     },
+     {
+    "id": 5678,
+    "category": {
+    "id": 0,
+    "name": "Dog"
+     },
+    "name": "Hero",
+    "photoUrls": [
+     "string"
+     ],
+     "tags": [
+     {
+     "id": 0,
+     "name": "string"
      }
+    ],
+     }
+     
 
 #### Java
 The following is an example of a successful  response with status **available**:
@@ -97,6 +115,6 @@ The following is an example of a successful  response with status **available**:
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IFBldFN0b3JlXG5hdXRob3
 I6IFRydXB0aVxuc3RhdHVzOiBGcnN0IGRyYWZ0XG5kYXRlOiAy
-Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbLTE0MDkyNTAwODgsLT
-Y2NzE2NjU5Nl19
+Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbODc5NDI4NTM0LC02Nj
+cxNjY1OTZdfQ==
 -->
