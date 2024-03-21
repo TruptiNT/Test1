@@ -27,6 +27,10 @@ https://petstore.swagger.io/v2/pet/findByStatus?status=available
 
 
 ### Response
+#### curl
+ curl -X 'GET' \
+      'https://petstore.swagger.io/v2/pet/findByStatus?status=available' \
+      -H 'accept: application/xml
 
 | HTTP Code       |Description                          |           
 |--------------|-------------------------------|
@@ -34,7 +38,7 @@ https://petstore.swagger.io/v2/pet/findByStatus?status=available
 |400           |Invalid Status code
 
 #### Example Response
-The following is an example of a successful  response with status **available** in ***curl***
+The following is an example of a successful  response with status **available**:
 
     {
     "id": 1234,
@@ -79,7 +83,7 @@ he following is an example of a successful  response with status **available** i
 -   `application/json`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODYyODA4NjMsLTExNjQyMzk0OTAsLT
-E2MzUyMDM4NjgsMTQ4MDkxMjQ5NSwtMTExMTU1ODMyMSwxMTA1
-NzEwMDc2LDE3NzM0NDM2ODYsMTQ1MDAxMTg2OF19
+eyJoaXN0b3J5IjpbMTA1NDUzNjA2NywtMTE2NDIzOTQ5MCwtMT
+YzNTIwMzg2OCwxNDgwOTEyNDk1LC0xMTExNTU4MzIxLDExMDU3
+MTAwNzYsMTc3MzQ0MzY4NiwxNDUwMDExODY4XX0=
 -->
