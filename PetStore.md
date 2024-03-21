@@ -297,4 +297,291 @@ Multiple status values can be provided with comma separated strings.</p>
 </div>
 </body>
 
+</html><h1 id="fetch-a-list-of-pets">Fetch a List of Pets</h1>
+<p>This section describes the procedure to fetch a list of pets from the Swagger <a href="https://petstore.swagger.io/">Pet store API</a> through API interaction.</p>
+<h4 id="endpoint">Endpoint</h4>
+<pre><code>   GET /pet/findByStatus
+</code></pre>
+<h4 id="description">Description</h4>
+<p>Finds pets by status.<br>
+Multiple status values can be provided with comma separated strings.</p>
+<h4 id="parameters">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*status</td>
+<td>Status values that need to be considered for filter (values are: available, pending, sold). The field is mandatory</td>
+<td>query</td>
+<td>available</td>
+</tr>
+</tbody>
+</table><h3 id="request">Request</h3>
+<p><a href="https://petstore.swagger.io/v2/pet/findByStatus?status='status'">https://petstore.swagger.io/v2/pet/findByStatus?status=‘status’</a></p>
+<h4 id="example-request">Example Request</h4>
+<p>Request URL to find pets with the status <strong>available</strong>:<br>
+<a href="https://petstore.swagger.io/v2/pet/findByStatus?status=available">https://petstore.swagger.io/v2/pet/findByStatus?status=available</a></p>
+<h3 id="response">Response</h3>
+
+<table>
+<thead>
+<tr>
+<th>HTTP Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Successful operation</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Invalid Status code</td>
+</tr>
+</tbody>
+</table><h4 id="example-response">Example Response</h4>
+<p>The following is an example of a successful  response with status <strong>available</strong>:</p>
+<pre><code>{
+"id": 1234,
+"category": {
+"id": 0,
+"name": "Dog"
+ },
+"name": "Zero",
+"photoUrls": [
+ "string"
+ ],
+ "tags": [
+ {
+ "id": 0,
+ "name": "string"
+ }
+],
+ }
+</code></pre>
+<h1 id="publication">Publication</h1>
+<p>Publishing in StackEdit makes it simple for you to publish online your files. Once you’re happy with a file, you can publish it to different hosting platforms like <strong>Blogger</strong>, <strong>Dropbox</strong>, <strong>Gist</strong>, <strong>GitHub</strong>, <strong>Google Drive</strong>, <strong>WordPress</strong> and <strong>Zendesk</strong>. With <a href="http://handlebarsjs.com/">Handlebars templates</a>, you have full control over what you export.</p>
+<blockquote>
+<p>Before starting to publish, you must link an account in the <strong>Publish</strong> sub-menu.</p>
+</blockquote>
+<h2 id="publish-a-file">Publish a File</h2>
+<p>You can publish your file by opening the <strong>Publish</strong> sub-menu and by clicking <strong>Publish to</strong>. For some locations, you can choose between the following formats:</p>
+<ul>
+<li>Markdown: publish the Markdown text on a website that can interpret it (<strong>GitHub</strong> for instance),</li>
+<li>HTML: publish the file converted to HTML via a Handlebars template (on a blog for example).</li>
+</ul>
+<h2 id="update-a-publication">Update a publication</h2>
+<p>After publishing, StackEdit keeps your file linked to that publication which makes it easy for you to re-publish it. Once you have modified your file and you want to update your publication, click on the <strong>Publish now</strong> button in the navigation bar.</p>
+<blockquote>
+<p><strong>Note:</strong> The <strong>Publish now</strong> button is disabled if your file has not been published yet.</p>
+</blockquote>
+<h2 id="manage-file-publication">Manage file publication</h2>
+<p>Since one file can be published to multiple locations, you can list and manage publish locations by clicking <strong>File publication</strong> in the <strong>Publish</strong> sub-menu. This allows you to list and remove publication locations that are linked to your file.</p>
+<h1 id="markdown-extensions">Markdown extensions</h1>
+<p>StackEdit extends the standard Markdown syntax by adding extra <strong>Markdown extensions</strong>, providing you with some nice features.</p>
+<blockquote>
+<p><strong>ProTip:</strong> You can disable any <strong>Markdown extension</strong> in the <strong>File properties</strong> dialog.</p>
+</blockquote>
+<h2 id="smartypants">SmartyPants</h2>
+<p>SmartyPants converts ASCII punctuation characters into “smart” typographic punctuation HTML entities. For example:</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>ASCII</th>
+<th>HTML</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single backticks</td>
+<td><code>'Isn't this fun?'</code></td>
+<td>‘Isn’t this fun?’</td>
+</tr>
+<tr>
+<td>Quotes</td>
+<td><code>"Isn't this fun?"</code></td>
+<td>“Isn’t this fun?”</td>
+</tr>
+<tr>
+<td>Dashes</td>
+<td><code>-- is en-dash, --- is em-dash</code></td>
+<td>– is en-dash, — is em-dash</td>
+</tr>
+</tbody>
+</table><h2 id="katex">KaTeX</h2>
+<p>You can render LaTeX mathematical expressions using <a href="https://khan.github.io/KaTeX/">KaTeX</a>:</p>
+<p>The <em>Gamma function</em> satisfying <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">!</mo><mspace width="1em"></mspace><mi mathvariant="normal">∀</mi><mi>n</mi><mo>∈</mo><mi mathvariant="double-struck">N</mi></mrow><annotation encoding="application/x-tex">\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">Γ</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">1</span><span class="mclose">)!</span><span class="mspace" style="margin-right: 1em;"></span><span class="mord">∀</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.68889em; vertical-align: 0em;"></span><span class="mord mathbb">N</span></span></span></span></span> is via the Euler integral</p>
+<p><span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo><mo>=</mo><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><msup><mi>t</mi><mrow><mi>z</mi><mo>−</mo><mn>1</mn></mrow></msup><msup><mi>e</mi><mrow><mo>−</mo><mi>t</mi></mrow></msup><mi>d</mi><mi>t</mi> <mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">Γ</span><span class="mopen">(</span><span style="margin-right: 0.04398em;" class="mord mathnormal">z</span><span class="mclose">)</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 2.32624em; vertical-align: -0.91195em;"></span><span class="mop"><span style="margin-right: 0.44445em; position: relative; top: -0.001125em;" class="mop op-symbol large-op">∫</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.41429em;"><span class="" style="top: -1.78805em; margin-left: -0.44445em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span><span class="" style="top: -3.8129em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">∞</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.91195em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.864108em;"><span class="" style="top: -3.113em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span style="margin-right: 0.04398em;" class="mord mathnormal mtight">z</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.843556em;"><span class="" style="top: -3.113em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mathnormal mtight">t</span></span></span></span></span></span></span></span></span><span class="mord mathnormal">d</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mord">.</span></span></span></span></span></span></p>
+<blockquote>
+<p>You can find more information about <strong>LaTeX</strong> mathematical expressions <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">here</a>.</p>
+</blockquote>
+<h2 id="uml-diagrams">UML diagrams</h2>
+<p>You can render UML diagrams using <a href="https://mermaidjs.github.io/">Mermaid</a>. For example, this will produce a sequence diagram:</p>
+<pre class=" language-mermaid"><svg id="mermaid-svg-XoO2juiO02npuUmh" width="100%" xmlns="http://www.w3.org/2000/svg" height="553" style="max-width: 814px;" viewBox="-50 -10 814 553"><style>#mermaid-svg-XoO2juiO02npuUmh{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#000000;}#mermaid-svg-XoO2juiO02npuUmh .error-icon{fill:#552222;}#mermaid-svg-XoO2juiO02npuUmh .error-text{fill:#552222;stroke:#552222;}#mermaid-svg-XoO2juiO02npuUmh .edge-thickness-normal{stroke-width:2px;}#mermaid-svg-XoO2juiO02npuUmh .edge-thickness-thick{stroke-width:3.5px;}#mermaid-svg-XoO2juiO02npuUmh .edge-pattern-solid{stroke-dasharray:0;}#mermaid-svg-XoO2juiO02npuUmh .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-svg-XoO2juiO02npuUmh .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-svg-XoO2juiO02npuUmh .marker{fill:#666;stroke:#666;}#mermaid-svg-XoO2juiO02npuUmh .marker.cross{stroke:#666;}#mermaid-svg-XoO2juiO02npuUmh svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-svg-XoO2juiO02npuUmh .actor{stroke:hsl(0,0%,83%);fill:#eee;}#mermaid-svg-XoO2juiO02npuUmh text.actor > tspan{fill:#333;stroke:none;}#mermaid-svg-XoO2juiO02npuUmh .actor-line{stroke:#666;}#mermaid-svg-XoO2juiO02npuUmh .messageLine0{stroke-width:1.5;stroke-dasharray:none;stroke:#333;}#mermaid-svg-XoO2juiO02npuUmh .messageLine1{stroke-width:1.5;stroke-dasharray:2,2;stroke:#333;}#mermaid-svg-XoO2juiO02npuUmh #arrowhead path{fill:#333;stroke:#333;}#mermaid-svg-XoO2juiO02npuUmh .sequenceNumber{fill:white;}#mermaid-svg-XoO2juiO02npuUmh #sequencenumber{fill:#333;}#mermaid-svg-XoO2juiO02npuUmh #crosshead path{fill:#333;stroke:#333;}#mermaid-svg-XoO2juiO02npuUmh .messageText{fill:#333;stroke:#333;}#mermaid-svg-XoO2juiO02npuUmh .labelBox{stroke:hsl(0,0%,83%);fill:#eee;}#mermaid-svg-XoO2juiO02npuUmh .labelText,#mermaid-svg-XoO2juiO02npuUmh .labelText > tspan{fill:#333;stroke:none;}#mermaid-svg-XoO2juiO02npuUmh .loopText,#mermaid-svg-XoO2juiO02npuUmh .loopText > tspan{fill:#333;stroke:none;}#mermaid-svg-XoO2juiO02npuUmh .loopLine{stroke-width:2px;stroke-dasharray:2,2;stroke:hsl(0,0%,83%);fill:hsl(0,0%,83%);}#mermaid-svg-XoO2juiO02npuUmh .note{stroke:hsl(60,100%,23.3333333333%);fill:#ffa;}#mermaid-svg-XoO2juiO02npuUmh .noteText,#mermaid-svg-XoO2juiO02npuUmh .noteText > tspan{fill:#333;stroke:none;}#mermaid-svg-XoO2juiO02npuUmh .activation0{fill:#f4f4f4;stroke:#666;}#mermaid-svg-XoO2juiO02npuUmh .activation1{fill:#f4f4f4;stroke:#666;}#mermaid-svg-XoO2juiO02npuUmh .activation2{fill:#f4f4f4;stroke:#666;}#mermaid-svg-XoO2juiO02npuUmh:root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}#mermaid-svg-XoO2juiO02npuUmh sequence{fill:apa;}</style><g></g><g><line id="actor9" x1="75" y1="5" x2="75" y2="542" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="0" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="75" y="32.5" style="text-anchor: middle; font-weight: 400; font-family: &quot;Open-Sans&quot;, &quot;sans-serif&quot;;" dominant-baseline="central" alignment-baseline="central" class="actor"><tspan x="75" dy="0">Alice</tspan></text></g><g><line id="actor10" x1="318" y1="5" x2="318" y2="542" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="243" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="318" y="32.5" style="text-anchor: middle; font-weight: 400; font-family: &quot;Open-Sans&quot;, &quot;sans-serif&quot;;" dominant-baseline="central" alignment-baseline="central" class="actor"><tspan x="318" dy="0">Bob</tspan></text></g><g><line id="actor11" x1="539" y1="5" x2="539" y2="542" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="464" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="539" y="32.5" style="text-anchor: middle; font-weight: 400; font-family: &quot;Open-Sans&quot;, &quot;sans-serif&quot;;" dominant-baseline="central" alignment-baseline="central" class="actor"><tspan x="539" dy="0">John</tspan></text></g><defs><marker id="arrowhead" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z"></path></marker></defs><defs><marker id="crosshead" markerWidth="15" markerHeight="8" orient="auto" refX="16" refY="4"><path fill="black" stroke="#000000" style="stroke-dasharray: 0px, 0px;" stroke-width="1px" d="M 9,2 V 6 L16,4 Z"></path><path fill="none" stroke="#000000" style="stroke-dasharray: 0px, 0px;" stroke-width="1px" d="M 0,1 L 6,7 M 6,1 L 0,7"></path></marker></defs><defs><marker id="filled-head" refX="18" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L14,7 L9,1 Z"></path></marker></defs><defs><marker id="sequencenumber" refX="15" refY="15" markerWidth="60" markerHeight="40" orient="auto"><circle cx="15" cy="15" r="6"></circle></marker></defs><text x="197" y="80" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-weight: 400;" class="messageText" dy="1em">Hello Bob, how are you?</text><line x1="75" y1="113" x2="318" y2="113" class="messageLine0" stroke-width="2" stroke="none" style="fill: none;" marker-end="url(#arrowhead)"></line><text x="429" y="128" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-weight: 400;" class="messageText" dy="1em">How about you John?</text><line x1="318" y1="161" x2="539" y2="161" style="stroke-dasharray: 3px, 3px; fill: none;" class="messageLine1" stroke-width="2" stroke="none" marker-end="url(#arrowhead)"></line><text x="197" y="176" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-weight: 400;" class="messageText" dy="1em">I am good thanks!</text><line x1="318" y1="209" x2="75" y2="209" style="stroke-dasharray: 3px, 3px; fill: none;" class="messageLine1" stroke-width="2" stroke="none" marker-end="url(#crosshead)"></line><text x="429" y="224" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-weight: 400;" class="messageText" dy="1em">I am good thanks!</text><line x1="318" y1="257" x2="539" y2="257" class="messageLine0" stroke-width="2" stroke="none" style="fill: none;" marker-end="url(#crosshead)"></line><g><rect x="564" y="267" fill="#EDF2AE" stroke="#666" width="150" height="94" rx="0" ry="0" class="note"></rect><text x="639" y="272" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-weight: 400;" class="noteText" dy="1em"><tspan x="639">Bob thinks a long</tspan></text><text x="639" y="291" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-weight: 400;" class="noteText" dy="1em"><tspan x="639">long time, so long</tspan></text><text x="639" y="309" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-weight: 400;" class="noteText" dy="1em"><tspan x="639">that the text does</tspan></text><text x="639" y="328" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-weight: 400;" class="noteText" dy="1em"><tspan x="639">not fit on a row.</tspan></text></g><text x="197" y="376" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-weight: 400;" class="messageText" dy="1em">Checking with John...</text><line x1="318" y1="409" x2="75" y2="409" style="stroke-dasharray: 3px, 3px; fill: none;" class="messageLine1" stroke-width="2" stroke="none"></line><text x="307" y="424" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-weight: 400;" class="messageText" dy="1em">Yes... John, how are you?</text><line x1="75" y1="457" x2="539" y2="457" class="messageLine0" stroke-width="2" stroke="none" style="fill: none;"></line><g><rect x="0" y="477" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="75" y="509.5" style="text-anchor: middle; font-weight: 400; font-family: &quot;Open-Sans&quot;, &quot;sans-serif&quot;;" dominant-baseline="central" alignment-baseline="central" class="actor"><tspan x="75" dy="0">Alice</tspan></text></g><g><rect x="243" y="477" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="318" y="509.5" style="text-anchor: middle; font-weight: 400; font-family: &quot;Open-Sans&quot;, &quot;sans-serif&quot;;" dominant-baseline="central" alignment-baseline="central" class="actor"><tspan x="318" dy="0">Bob</tspan></text></g><g><rect x="464" y="477" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="539" y="509.5" style="text-anchor: middle; font-weight: 400; font-family: &quot;Open-Sans&quot;, &quot;sans-serif&quot;;" dominant-baseline="central" alignment-baseline="central" class="actor"><tspan x="539" dy="0">John</tspan></text></g></svg></pre>
+<p>And this will produce a flow chart:</p>
+<pre class=" language-mermaid"><svg id="mermaid-svg-VJMDNQgRMY5NAolY" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="174.43331909179688" style="max-width: 502.82000732421875px;" viewBox="0 0 502.82000732421875 174.43331909179688"><style>#mermaid-svg-VJMDNQgRMY5NAolY{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#000000;}#mermaid-svg-VJMDNQgRMY5NAolY .error-icon{fill:#552222;}#mermaid-svg-VJMDNQgRMY5NAolY .error-text{fill:#552222;stroke:#552222;}#mermaid-svg-VJMDNQgRMY5NAolY .edge-thickness-normal{stroke-width:2px;}#mermaid-svg-VJMDNQgRMY5NAolY .edge-thickness-thick{stroke-width:3.5px;}#mermaid-svg-VJMDNQgRMY5NAolY .edge-pattern-solid{stroke-dasharray:0;}#mermaid-svg-VJMDNQgRMY5NAolY .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-svg-VJMDNQgRMY5NAolY .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-svg-VJMDNQgRMY5NAolY .marker{fill:#666;stroke:#666;}#mermaid-svg-VJMDNQgRMY5NAolY .marker.cross{stroke:#666;}#mermaid-svg-VJMDNQgRMY5NAolY svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-svg-VJMDNQgRMY5NAolY .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#000000;}#mermaid-svg-VJMDNQgRMY5NAolY .cluster-label text{fill:#333;}#mermaid-svg-VJMDNQgRMY5NAolY .cluster-label span{color:#333;}#mermaid-svg-VJMDNQgRMY5NAolY .label text,#mermaid-svg-VJMDNQgRMY5NAolY span{fill:#000000;color:#000000;}#mermaid-svg-VJMDNQgRMY5NAolY .node rect,#mermaid-svg-VJMDNQgRMY5NAolY .node circle,#mermaid-svg-VJMDNQgRMY5NAolY .node ellipse,#mermaid-svg-VJMDNQgRMY5NAolY .node polygon,#mermaid-svg-VJMDNQgRMY5NAolY .node path{fill:#eee;stroke:#999;stroke-width:1px;}#mermaid-svg-VJMDNQgRMY5NAolY .node .label{text-align:center;}#mermaid-svg-VJMDNQgRMY5NAolY .node.clickable{cursor:pointer;}#mermaid-svg-VJMDNQgRMY5NAolY .arrowheadPath{fill:#333333;}#mermaid-svg-VJMDNQgRMY5NAolY .edgePath .path{stroke:#666;stroke-width:1.5px;}#mermaid-svg-VJMDNQgRMY5NAolY .flowchart-link{stroke:#666;fill:none;}#mermaid-svg-VJMDNQgRMY5NAolY .edgeLabel{background-color:white;text-align:center;}#mermaid-svg-VJMDNQgRMY5NAolY .edgeLabel rect{opacity:0.5;background-color:white;fill:white;}#mermaid-svg-VJMDNQgRMY5NAolY .cluster rect{fill:hsl(210,66.6666666667%,95%);stroke:#26a;stroke-width:1px;}#mermaid-svg-VJMDNQgRMY5NAolY .cluster text{fill:#333;}#mermaid-svg-VJMDNQgRMY5NAolY .cluster span{color:#333;}#mermaid-svg-VJMDNQgRMY5NAolY div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(-160,0%,93.3333333333%);border:1px solid #26a;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-svg-VJMDNQgRMY5NAolY:root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}#mermaid-svg-VJMDNQgRMY5NAolY flowchart{fill:apa;}</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" style="opacity: 1;" id="L-A-B"><path class="path" d="M109.67378624267701,67.60832977294922L170.0749969482422,38.85832977294922L246.16666412353516,38.85832977294922" marker-end="url(https://stackedit.io/app#arrowhead13)" style="fill:none"></path><defs><marker id="arrowhead13" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath LS-A LE-C" style="opacity: 1;" id="L-A-C"><path class="path" d="M109.67378624267701,114.32498931884766L170.0749969482422,143.07498931884766L226.9499969482422,143.07498931884766" marker-end="url(https://stackedit.io/app#arrowhead14)" style="fill:none"></path><defs><marker id="arrowhead14" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath LS-B LE-D" style="opacity: 1;" id="L-B-D"><path class="path" d="M307.8833236694336,38.85832977294922L352.09999084472656,38.85832977294922L400.1574218001457,68.90923011635829" marker-end="url(https://stackedit.io/app#arrowhead15)" style="fill:none"></path><defs><marker id="arrowhead15" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath LS-C LE-D" style="opacity: 1;" id="L-C-D"><path class="path" d="M327.09999084472656,143.07498931884766L352.09999084472656,143.07498931884766L400.1574199179397,114.02409014499051" marker-end="url(https://stackedit.io/app#arrowhead16)" style="fill:none"></path><defs><marker id="arrowhead16" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" style="opacity: 1;" transform="translate(170.0749969482422,38.85832977294922)"><g transform="translate(-31.875,-13.358329772949219)" class="label"><rect rx="0" ry="0" width="63.75" height="26.716659545898438"></rect><foreignObject width="63.75" height="26.716659545898438"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B">Link text</span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-C" class="edgeLabel L-LS-A' L-LE-C"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-D" class="edgeLabel L-LS-B' L-LE-D"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-C-D" class="edgeLabel L-LS-C' L-LE-D"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" style="opacity: 1;" id="flowchart-A-56" transform="translate(60.599998474121094,90.96665954589844)"><rect rx="0" ry="0" x="-52.599998474121094" y="-23.35832977294922" width="105.19999694824219" height="46.71665954589844" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-42.599998474121094,-13.358329772949219)"><foreignObject width="85.19999694824219" height="26.716659545898438"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Square Rect</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-B-57" transform="translate(277.0249938964844,38.85832977294922)"><circle x="-30.85832977294922" y="-23.35832977294922" r="30.85832977294922" class="label-container"></circle><g class="label" transform="translate(0,0)"><g transform="translate(-20.85832977294922,-13.358329772949219)"><foreignObject width="41.71665954589844" height="26.716659545898438"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Circle</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-C-59" transform="translate(277.0249938964844,143.07498931884766)"><rect rx="5" ry="5" x="-50.07499694824219" y="-23.35832977294922" width="100.14999389648438" height="46.71665954589844" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-40.07499694824219,-13.358329772949219)"><foreignObject width="80.14999389648438" height="26.716659545898438"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Round Rect</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-D-61" transform="translate(435.9599838256836,90.96665954589844)"><polygon points="58.85999450683594,0 117.71998901367188,-58.85999450683594 58.85999450683594,-117.71998901367188 0,-58.85999450683594" transform="translate(-58.85999450683594,58.85999450683594)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-32.041664123535156,-13.358329772949219)"><foreignObject width="64.08332824707031" height="26.716659545898438"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Rhombus</div></foreignObject></g></g></g></g></g></g></svg></pre>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
+</div>
+</body>
+
 </html>
+# Fetch a List of Pets
+
+This section describes the procedure to fetch a list of pets from the Swagger [Pet store API](https://petstore.swagger.io/) through API interaction.
+
+#### Endpoint
+       GET /pet/findByStatus
+
+#### Description
+Finds pets by status.
+Multiple status values can be provided with comma separated strings.
+
+#### Parameters
+
+| Name|Description|Type  |Default|
+|--------|-------------------------------------------------------------------------------------------|------|------------|
+| *status |Status values that need to be considered for filter (values are: available, pending, sold). The field is mandatory |query | available
+
+
+### Request
+https://petstore.swagger.io/v2/pet/findByStatus?status='status'
+
+#### Example Request
+Request URL to find pets with the status **available**: 
+https://petstore.swagger.io/v2/pet/findByStatus?status=available
+
+
+### Response
+
+| HTTP Code       |Description                          |           
+|--------------|-------------------------------|
+|200           |Successful operation   
+|400           |Invalid Status code
+
+#### Example Response
+The following is an example of a successful  response with status **available**:
+
+    {
+    "id": 1234,
+    "category": {
+    "id": 0,
+    "name": "Dog"
+     },
+    "name": "Zero",
+    "photoUrls": [
+     "string"
+     ],
+     "tags": [
+     {
+     "id": 0,
+     "name": "string"
+     }
+    ],
+     }
+
+
+
+
+
+
+# Publication
+
+Publishing in StackEdit makes it simple for you to publish online your files. Once you're happy with a file, you can publish it to different hosting platforms like **Blogger**, **Dropbox**, **Gist**, **GitHub**, **Google Drive**, **WordPress** and **Zendesk**. With [Handlebars templates](http://handlebarsjs.com/), you have full control over what you export.
+
+> Before starting to publish, you must link an account in the **Publish** sub-menu.
+
+## Publish a File
+
+You can publish your file by opening the **Publish** sub-menu and by clicking **Publish to**. For some locations, you can choose between the following formats:
+
+- Markdown: publish the Markdown text on a website that can interpret it (**GitHub** for instance),
+- HTML: publish the file converted to HTML via a Handlebars template (on a blog for example).
+
+## Update a publication
+
+After publishing, StackEdit keeps your file linked to that publication which makes it easy for you to re-publish it. Once you have modified your file and you want to update your publication, click on the **Publish now** button in the navigation bar.
+
+> **Note:** The **Publish now** button is disabled if your file has not been published yet.
+
+## Manage file publication
+
+Since one file can be published to multiple locations, you can list and manage publish locations by clicking **File publication** in the **Publish** sub-menu. This allows you to list and remove publication locations that are linked to your file.
+
+
+# Markdown extensions
+
+StackEdit extends the standard Markdown syntax by adding extra **Markdown extensions**, providing you with some nice features.
+
+> **ProTip:** You can disable any **Markdown extension** in the **File properties** dialog.
+
+
+## SmartyPants
+
+SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
+
+|                |ASCII                          |HTML                         |
+|----------------|-------------------------------|-----------------------------|
+|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
+|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
+|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
+
+
+## KaTeX
+
+You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
+
+The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
+
+$$
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+$$
+
+> You can find more information about **LaTeX** mathematical expressions [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
+
+
+## UML diagrams
+
+You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
+
+```mermaid
+sequenceDiagram
+Alice ->> Bob: Hello Bob, how are you?
+Bob-->>John: How about you John?
+Bob--x Alice: I am good thanks!
+Bob-x John: I am good thanks!
+Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+
+Bob-->Alice: Checking with John...
+Alice->John: Yes... John, how are you?
+```
+
+And this will produce a flow chart:
+
+```mermaid
+graph LR
+A[Square Rect] -- Link text --> B((Circle))
+A --> C(Round Rect)
+B --> D{Rhombus}
+C --> D
+```
+
+
+> Written with [StackEdit](https://stackedit.io/).
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTQ1MDAxMTg2OF19
+-->
