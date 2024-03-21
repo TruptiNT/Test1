@@ -92,18 +92,18 @@ The following is an example of a successful  response with status **available**:
 
     [
      { 
-     "id": 2154, 
+     "id": 1111, 
      "category": 
       { 
-        "id": 2154, 
-        "name": "<string>" 
+        "id": 1111, 
+        "name": "fish" 
        }, 
-       "name": "doggie",
+       "name": "Nibbles",
         "photoUrls": [ "<string>" ], 
         "tags": 
         [ 
         { 
-        "id": 2154, 
+        "id": 1111, 
         "name": "<string>" 
         } 
         ], 
@@ -115,6 +115,6 @@ The following is an example of a successful  response with status **available**:
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IFBldFN0b3JlXG5hdXRob3
 I6IFRydXB0aVxuc3RhdHVzOiBGcnN0IGRyYWZ0XG5kYXRlOiAy
-Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbODc5NDI4NTM0LC02Nj
-cxNjY1OTZdfQ==
+Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbMjExMzQyMDE4MywtNj
+Y3MTY2NTk2XX0=
 -->
