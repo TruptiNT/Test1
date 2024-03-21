@@ -21,6 +21,16 @@ Multiple status values can be provided with comma separated strings.
 | N/A|N/A|header|  
 |N/A| N/A|path| 
 
+### Response Content Type
+-   application/xml
+-   application/json
+
+### Response Code
+
+| HTTP Code       |Description                          |           
+|--------------|-------------------------------|
+|200           |Successful operation   
+|400           |Invalid Status code
 
 ### Sample Request
 
@@ -37,6 +47,8 @@ Multiple status values can be provided with comma separated strings.
 
 
 ### Sample Response
+
+#### cURL
 
 //Request URL to find pets with the status **available**: 
 
@@ -94,6 +106,6 @@ In Postman, enter the URL:
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IFBldFN0b3JlXG5hdXRob3
 I6IFRydXB0aVxuc3RhdHVzOiBGcnN0IGRyYWZ0XG5kYXRlOiAy
-Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbLTE2MTgyNzA0MTgsLT
-E5MjQ1ODc1NDUsODE2NTAyNDA2XX0=
+Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbMjA5MDcyODQyNCwtMT
+kyNDU4NzU0NSw4MTY1MDI0MDZdfQ==
 -->
