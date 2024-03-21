@@ -35,7 +35,8 @@ Multiple status values can be provided with comma separated strings.
 ### Response
 
 #### Response Content Type
-
+-   application/xml
+-   application/json
 
 #### Response Code
 
@@ -44,7 +45,7 @@ Multiple status values can be provided with comma separated strings.
 |200           |Successful operation   
 |400           |Invalid Status code
 
-#### Example Response
+### Examples e
 The following is an example of a successful  response with status **available**:
 
     {
@@ -71,6 +72,6 @@ The following is an example of a successful  response with status **available**:
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IFBldFN0b3JlXG5hdXRob3
 I6IFRydXB0aVxuc3RhdHVzOiBGcnN0IGRyYWZ0XG5kYXRlOiAy
-Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbLTQ3NzE3MDg0Miw4MT
-Y1MDI0MDZdfQ==
+Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbLTExMTY4OTc3NTMsOD
+E2NTAyNDA2XX0=
 -->
