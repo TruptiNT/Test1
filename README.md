@@ -1,4 +1,5 @@
-This file describes the procedure to fetch a list of pets from Swagger Petstore API
+The "PetStore.md" file describes the procedure to fetch a list of pets from Swagger Petstore API.
+
 
 The file contains the following details:
 1) Overview of API capabilities.
