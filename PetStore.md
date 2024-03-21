@@ -22,7 +22,7 @@ Multiple status values can be provided with comma separated strings.
 |N/A| N/A|path| 
 
 
-### Request
+### Sample Request
 
 #### Request in cURL
 //Request URL to find pets with the status **available**: 
@@ -36,22 +36,7 @@ Multiple status values can be provided with comma separated strings.
     HttpResponse<String> response = Unirest.get("https://petstore.swagger.io/v2/pet/findByStatus") .header("Accept", "application/xml") .queryString("status", "{status}") .asString(); System.out.println(response.getBody());
 
 
-### Response
-
-#### Response Content Type
--   application/xml
--   application/json
-
-#### Response Code
-
-| HTTP Code       |Description                          |           
-|--------------|-------------------------------|
-|200           |Successful operation   
-|400           |Invalid Status code
-
-### Examples
-
-#### cURL
+### Sample Response
 
 //Request URL to find pets with the status **available**: 
 
@@ -109,6 +94,6 @@ In Postman, enter the URL:
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IFBldFN0b3JlXG5hdXRob3
 I6IFRydXB0aVxuc3RhdHVzOiBGcnN0IGRyYWZ0XG5kYXRlOiAy
-Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbNDg1MTMxMDA0LC0xOT
-I0NTg3NTQ1LDgxNjUwMjQwNl19
+Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbLTE2MTgyNzA0MTgsLT
+E5MjQ1ODc1NDUsODE2NTAyNDA2XX0=
 -->
