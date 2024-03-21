@@ -3,15 +3,15 @@
 
 This section describes the procedure to fetch a list of pets from the  [Swagger Pet store API](https://petstore.swagger.io/) through API interaction.
 
-#### Endpoint
-       GET /pet/findByStatus
-
-#### Description
+### Description
 Finds pets by status.
 Multiple status values can be provided with comma separated strings.
 For this sample, you can use the API key `special-key` to test the authorization filters.
 
-#### Parameters
+### Endpoint
+       GET /pet/findByStatus
+
+### Parameters
 
 | Name|Description|Type  |Default|
 |--------|-------------------------------------------------------------------------------------------|------|------------|
@@ -93,7 +93,7 @@ he following is an example of a successful  response with status **available** i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNzYxOTkyLC0xMTY0MjM5NDkwLC0xNj
-M1MjAzODY4LDE0ODA5MTI0OTUsLTExMTE1NTgzMjEsMTEwNTcx
-MDA3NiwxNzczNDQzNjg2LDE0NTAwMTE4NjhdfQ==
+eyJoaXN0b3J5IjpbMTEwOTI3NzM0OSwtMTE2NDIzOTQ5MCwtMT
+YzNTIwMzg2OCwxNDgwOTEyNDk1LC0xMTExNTU4MzIxLDExMDU3
+MTAwNzYsMTc3MzQ0MzY4NiwxNDUwMDExODY4XX0=
 -->
