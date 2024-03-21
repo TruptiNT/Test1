@@ -33,6 +33,10 @@ https://petstore.swagger.io/v2/pet/findByStatus?status=available
 |200           |Successful operation   
 |400           |Invalid Status code
 
+#### Response Content Type
+-   `application/xml`  
+-   `application/json`
+
 #### Example Response
 The following is an example of a successful  response with status **available**:
 
@@ -54,6 +58,6 @@ The following is an example of a successful  response with status **available**:
     ],
      }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNTcxMDA3NiwxNzczNDQzNjg2LDE0NT
-AwMTE4NjhdfQ==
+eyJoaXN0b3J5IjpbLTExMTE1NTgzMjEsMTEwNTcxMDA3NiwxNz
+czNDQzNjg2LDE0NTAwMTE4NjhdfQ==
 -->
