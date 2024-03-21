@@ -56,25 +56,30 @@ The following is an example of a successful  response with status **available** 
 
 he following is an example of a successful  response with status **available** in ***Java***
 
-   `[ 
-   { 
-   "id": 2154, 
-   "category": { "id": 2154, "name": "<string>" }, 
-   "name": "doggie", 
-   "photoUrls": [ "<string>" ], 
-   "tags": 
-     [ 
-      { 
+      `[ 
+       { 
        "id": 2154, 
-       "name": "<string>" } ], "status": "available" } ]` 
-
+       "category": { "id": 2154, "name": "<string>" }, 
+       "name": "doggie", 
+       "photoUrls": [ "<string>" ], 
+       "tags": 
+         [ 
+          { 
+           "id": 2154, 
+           "name": "<string>" 
+           } 
+          ], 
+          "status": "available" 
+         } 
+        ]` 
 
 
 #### Response Content Type
 -   `application/xml`  
 -   `application/json`
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MjgyNDc2NywtMTE2NDIzOTQ5MCwtMT
-YzNTIwMzg2OCwxNDgwOTEyNDk1LC0xMTExNTU4MzIxLDExMDU3
-MTAwNzYsMTc3MzQ0MzY4NiwxNDUwMDExODY4XX0=
+eyJoaXN0b3J5IjpbLTExODYyODA4NjMsLTExNjQyMzk0OTAsLT
+E2MzUyMDM4NjgsMTQ4MDkxMjQ5NSwtMTExMTU1ODMyMSwxMTA1
+NzEwMDc2LDE3NzM0NDM2ODYsMTQ1MDAxMTg2OF19
 -->
