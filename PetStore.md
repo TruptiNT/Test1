@@ -1,26 +1,9 @@
-<!DOCTYPE html>
-<html>
+Get List of Pets
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PetStore</title>
-  <link rel="stylesheet" href="https://stackedit.io/style.css" />
-</head>
-
-<body class="stackedit">
-  <div class="stackedit__html">
-
-
-  
-  
-  <title>PetStore</title>
-  
-
-
-  <div class="stackedit__html"><p>Get List of PetsThis section describes the procedure to fetch a list of pets from the  <a href="https://petstore.swagger.io/">Swagger Pet store API</a> through API interaction.</p>
-</div><h3 id="descriptionfinds-pets-by-status.br">DescriptionFinds pets by status.<br></h3>
-<p>Multiple status values can be provided with comma separated strings.<br><br>
+This section describes the procedure to fetch a list of pets from the  <a href="https://petstore.swagger.io/">Swagger Pet store API</a> through API interaction.</p>
+</div><h3 id="descriptionfinds-pets-by-status.br">
+DescriptionFinds pets by status<p>
+Multiple status values can be provided with comma separated strings.<br><br>
 For this sample, use the API key <code>special-key</code> to test the authorization filters.</p>
 <h3 id="endpoint">Endpoint</h3>
 <pre><code>   GET /pet/findByStatus
@@ -81,3 +64,9 @@ https://petstore.swagger.io/v2/pet/findByStatus?status=available
 </body>
 
 </html>
+<!--stackedit_data:
+eyJwcm9wZXJ0aWVzIjoidGl0bGU6IFBldFN0b3JlXG5hdXRob3
+I6IFRydXB0aVxuc3RhdHVzOiBGcnN0IGRyYWZ0XG5kYXRlOiAy
+Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbLTEzODQ5MjMyOTldfQ
+==
+-->
