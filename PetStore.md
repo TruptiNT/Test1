@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html>
+# Get List of Pets
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PetStore</title>
-  <link rel="stylesheet" href="https://stackedit.io/style.css" />
-</head>
-
-<body class="stackedit">
-  <div class="stackedit__html"><h1 id="get-list-of-pets">Get List of Pets</h1>
 <p>This section describes the procedure to fetch a list of pets from the  <a href="https://petstore.swagger.io/">Swagger Pet store API</a> through API interaction.</p>
 <h3 id="description">Description</h3>
 <p>Finds pets by status.<br>
@@ -132,5 +122,5 @@ The following is an example of a successful  response with status <strong>**avai
 
 </html>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NTY1MTYzOV19
+eyJoaXN0b3J5IjpbMTU2NDExMDEzOSwtOTQ1NjUxNjM5XX0=
 -->
