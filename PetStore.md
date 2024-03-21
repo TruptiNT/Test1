@@ -32,6 +32,11 @@ https://petstore.swagger.io/v2/pet/findByStatus?status=available
       'https://petstore.swagger.io/v2/pet/findByStatus?status=available' \
       -H 'accept: application/xml
 
+#### Java
+// This code sample uses the 'Unirest' library: // http://unirest.io/java.html `HttpResponse<String> response = Unirest.get("https://petstore.swagger.io/v2/pet/findByStatus") .header("Accept", "application/xml") .queryString("status", "{status}") .asString(); System.out.println(response.getBody());`
+
+#### Response Codes
+
 | HTTP Code       |Description                          |           
 |--------------|-------------------------------|
 |200           |Successful operation   
@@ -83,7 +88,7 @@ he following is an example of a successful  response with status **available** i
 -   `application/json`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NDUzNjA2NywtMTE2NDIzOTQ5MCwtMT
+eyJoaXN0b3J5IjpbMTU2NDM2NzQ2MCwtMTE2NDIzOTQ5MCwtMT
 YzNTIwMzg2OCwxNDgwOTEyNDk1LC0xMTExNTU4MzIxLDExMDU3
 MTAwNzYsMTc3MzQ0MzY4NiwxNDUwMDExODY4XX0=
 -->
