@@ -37,19 +37,23 @@ For this sample, use the API key <code>special-key</code> to test the authorizat
 <td>available</td>
 </tr>
 </tbody>
-</table><h3 id="request">Request</h3>
+</table><h3 id="requestRequest</h3>
 <h4 id="curl">curl</h4>
 <pre><code> curl -X 'GET' \
-      'https://petstore.swagger.io/v2/pet/findByStatus?status=available' \
+      'https://petstore.swagger.io/v2/pet/findByStatus?statusavailable' \
       -H 'accept: application/xml
 </code></pre>
 <h4 id="java">Java</h4>
-<p>// This code sample uses the ‘Unirest’ library:<br>
+<p>          
+// This code sample uses the ‘Unirest library:<br>
 // <a href="http://unirest.io/java.html">http://unirest.io/java.html</a></p>
-<pre><code>HttpResponse&lt;String&gt; response = Unirest.get("https://petstore.swagger.io/v2/pet/findByStatus") .header("Accept", "application/xml") .queryString("status", "{status}") .asString(); System.out.println(response.getBody());
+<pre><code>HttpResponse&lt;<String&gt;> response = Unirest.get("https://petstore.swagger.io/v2/pet/findByStatus") .header("Accept", "application/xml") .queryString("status", "{status}") .asString(); System.out.println(response.getBody());
 </code></pre>
-<h4 id="example-request">Example Request</h4>
-<p>Request URL to find pets with the status <strong>available</strong>:<br>
+<h4 id="example-request">
+
+#### Example Request</h4>
+<p>
+Request URL to find pets with the status <strong>**available</strong>:<br>
 <a href="https://petstore.swagger.io/v2/pet/findByStatus?status=available">https://petstore.swagger.io/v2/pet/findByStatus?status=available</a></p>
 <h3 id="response">Response</h3>
 <h4 id="response-codes">Response Codes</h4>
@@ -71,41 +75,50 @@ For this sample, use the API key <code>special-key</code> to test the authorizat
 <td>Invalid Status code</td>
 </tr>
 </tbody>
-</table><h4 id="example-response">Example Response</h4>
-<p>The following is an example of a successful  response with status <strong>available</strong>:</p>
+</table><h4 id="example-response">**: 
+https://petstore.swagger.io/v2/pet/findByStatus?status=available
+
+### Response
+#### Response Codes
+
+| HTTP Code       |Description    } 
+                 |           
+|--------------|-------------------------------|
+|200           |Successful operation   
+|400           |Invalid Status codeExample Response</h4>
+<p>
+The following is an example of a successful  response with status <strong>**available</strong>:</p>
 <pre><code>{
 "id": 1234,
 "category": {
 "id": 0,
 "name": "Dog"
- },
-"name": "Zero",
+ "name": "Zero",
 "photoUrls": [
- "string"
+ "strin"
  ],
  "tags": [
- {
- "id": 0,
+  "id": 0,
  "name": "string"
  }
 ],
  }
 </code></pre>
-<p>he following is an example of a successful  response with status <strong>available</strong> in <em><strong>Java</strong></em></p>
+<p>he following is an example of a successful  response with status <strong>**available</strong> in <em><strong>Java</strong></em></p>
 <pre><code>  `[ 
    { 
    "id": 2154, 
-   "category": { "id": 2154, "name": "&lt;string&gt;" }, 
-   "name": "doggie", 
-   "photoUrls": [ "&lt;string&gt;" ], 
+   "category": { "id": 2154, "name": "&lt;string" }, 
+     "name": "doggie", 
+   "photoUrls": [ "&lt;<string&gt;>" ], 
    "tags": 
      [ 
       { 
        "id": 2154, 
-       "name": "&lt;string&gt;" 
-       } 
-      ], 
-      "status": "available" 
+       "name": "&lt;<string&gt;" 
+       
+          ], 
+      "status": available" 
      } 
     ]` 
 </code></pre>
@@ -118,3 +131,6 @@ For this sample, use the API key <code>special-key</code> to test the authorizat
 </body>
 
 </html>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTk0NTY1MTYzOV19
+-->
