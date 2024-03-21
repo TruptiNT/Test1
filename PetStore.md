@@ -80,15 +80,28 @@ In Postman, enter the URL:
 
   The following is an example of a successful  response with status **available**:
   
-`[ 
-{ 
-"id": 2154, "category": { "id": 2154, "name": "<string>" }, "name": "doggie", "photoUrls": [ "<string>" ], "tags": [ { "id": 2154, "name": "<string>" } ], "status": "available" } ]`
+
+   `[ 
+    { 
+    "id": 2154, 
+    "category": { "id": 2154, 
+    "name": "<string>" }, 
+    "name": "doggie", 
+    "photoUrls": [ "<string>" ], 
+    "tags": 
+    [ 
+    { 
+    "id": 2154, 
+    "name": "<string>" } 
+    ], 
+    "status": "available" }
+     ]`
 
 
 
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IFBldFN0b3JlXG5hdXRob3
 I6IFRydXB0aVxuc3RhdHVzOiBGcnN0IGRyYWZ0XG5kYXRlOiAy
-Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbMzk4OTkxODMxLDgxNj
-UwMjQwNl19
+Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbLTE5OTI5MDUxNyw4MT
+Y1MDI0MDZdfQ==
 -->
