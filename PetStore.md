@@ -4,13 +4,13 @@
 
 This section describes the procedure to fetch a list of pets from the Swagger [Pet store API](https://petstore.swagger.io/) through API interaction.
 
-#### Endpoint
-       GET /pet/findByStatus
-
 #### Description
 Finds pets by status.
 Multiple status values can be provided with comma separated strings.
 
+#### Endpoint
+       GET /pet/findByStatus
+       
 #### Parameters
 
 | Name|Description|Type  |Default|
@@ -54,11 +54,11 @@ The following is an example of a successful  response with status **available**:
     ],
      }
 
-> Written with [StackEdit](https://stackedit.io/).
+
 
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IFBldFN0b3JlXG5hdXRob3
 I6IFRydXB0aVxuc3RhdHVzOiBGcnN0IGRyYWZ0XG5kYXRlOiAy
-Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbLTE0MzcwNzk2MzQsOD
+Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbLTIwODI5MDg5MTIsOD
 E2NTAyNDA2XX0=
 -->
