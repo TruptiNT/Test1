@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html>
+Get List of Pets</p>
+<p>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PetStore</title>
-  <link rel="stylesheet" href="https://stackedit.io/style.css" />
-</head>
-
-<body class="stackedit">
-  <div class="stackedit__html"><p>Get List of Pets</p>
-<p>This section describes the procedure to fetch a list of pets from the  <a href="https://petstore.swagger.io/">Swagger Pet store API</a> through API interaction.</p>
-<h3 id="descriptionfinds-pets-by-status.br">
+This section describes the procedure to fetch a list of pets from the  <a href="https://petstore.swagger.io/">Swagger Pet store API</a> through API interaction.</p>
+</div><h3 id="descriptionfinds-pets-by-status.br">
 Description
-Finds pets by status<p>
+Finds pets by status<>
 Multiple status values can be provided with comma separated strings.<br><br>
 For this sample, use the API key <code>special-key</code> to test the authorization filters.</p>
 </h3><h3 id="endpoint">Endpoint</h3>
@@ -37,7 +28,7 @@ For this sample, use the API key <code>special-key</code> to test the authorizat
 <td>available</td>
 </tr>
 </tbody>
-</table><h4 id="example-requesth4">4 id="examplerequesth4"&gt;Example Request</h4>
+</table><h4 id="example-requesth4">4 id="examplerequesth4"Example Request</h4>
 <p>
 Request URL to find pets with the status <strong>**available</strong>:<br>
 <a href="https://petstore.swagger.io/v2/pet/findByStatus?status=available">https://petstore.swagger.io/v2/pet/findByStatus?status=available</a></p>
@@ -76,3 +67,8 @@ https://petstore.swagger.io/v2/pet/findByStatus?status=available
 </body>
 
 </html>
+<!--stackedit_data:
+eyJwcm9wZXJ0aWVzIjoidGl0bGU6IFBldFN0b3JlXG5hdXRob3
+I6IFRydXB0aVxuc3RhdHVzOiBGcnN0IGRyYWZ0XG5kYXRlOiAy
+Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbODE2NTAyNDA2XX0=
+-->
