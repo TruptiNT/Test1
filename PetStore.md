@@ -9,10 +9,18 @@
 </head>
 
 <body class="stackedit">
-  <div class="stackedit__html"><p>Get List of PetsThis section describes the procedure to fetch a list of pets from the  <a href="https://petstore.swagger.io/">Swagger Pet store API</a> through API interaction.</p>
+  <div class="stackedit__html">
 
-### DescriptionFinds pets by status.<br>
-Multiple status values can be provided with comma separated strings.<br>
+
+  
+  
+  <title>PetStore</title>
+  
+
+
+  <div class="stackedit__html"><p>Get List of PetsThis section describes the procedure to fetch a list of pets from the  <a href="https://petstore.swagger.io/">Swagger Pet store API</a> through API interaction.</p>
+</div><h3 id="descriptionfinds-pets-by-status.br">DescriptionFinds pets by status.<br></h3>
+<p>Multiple status values can be provided with comma separated strings.<br><br>
 For this sample, use the API key <code>special-key</code> to test the authorization filters.</p>
 <h3 id="endpoint">Endpoint</h3>
 <pre><code>   GET /pet/findByStatus
@@ -23,7 +31,7 @@ For this sample, use the API key <code>special-key</code> to test the authorizat
 <tr>
 <th>Name</th>
 <th>Description
-<th>Type</th>
+</th><th>Type</th>
 <th>Default</th>
 </tr>
 </thead>
@@ -35,7 +43,7 @@ For this sample, use the API key <code>special-key</code> to test the authorizat
 <td>available</td>
 </tr>
 </tbody>
-</table><h4 id="example-requesth4">4 id="examplerequesth4">Example Request</h4>
+</table><h4 id="example-requesth4">4 id="examplerequesth4"&gt;Example Request</h4>
 <p>
 Request URL to find pets with the status <strong>**available</strong>:<br>
 <a href="https://petstore.swagger.io/v2/pet/findByStatus?status=available">https://petstore.swagger.io/v2/pet/findByStatus?status=available</a></p>
@@ -66,47 +74,10 @@ https://petstore.swagger.io/v2/pet/findByStatus?status=available
 |--------------|-------------------------------|<br>
 |200    
 ||Successful operation
-|400           |Invalid Status codeExample Response</>
-<p>
-The following is an example of a successful  response with status <strong>**available</strong>:</p>
-<pre><code>{
-"id": 1234,
-"category": {
-"id": 0,
-"name": "Dog"
- "name": "Zero",
-"photoUrls": [
- "strin"
- ],
- "tags": [
-  "id": 0,
- "name": "string"
- }
-],
- }
-</code></pre>
-<p>he following is an example of a successful  response with status <strong>**available</strong> in <em><strong>Java</strong></em></p>
-<pre><code>  `[ 
-   { 
-   "id": 2154, 
-   "category": { "id": 2154, "name": "&lt;string" }, 
-     "name": "doggie", 
-   "photoUrls": [ "&lt;</code></pre><p></p>
-<h4 id="response-content-type">Response Content Type</h4>
-<ul>
-<li><code>application/xml</code></li>
-<li><code>application/json</code></li>
-</ul>
-
+|400           |Invalid Status codeExample Response
 
 
 </div>
 </body>
 
 </html>
-<!--stackedit_data:
-eyJwcm9wZXJ0aWVzIjoidGl0bGU6IFBldFN0b3JlXG5hdXRob3
-I6IFRydXB0aVxuc3RhdHVzOiBGcnN0IGRyYWZ0XG5kYXRlOiAy
-Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbLTE1NDA2NTc1NTldfQ
-==
--->
