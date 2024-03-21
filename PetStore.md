@@ -25,13 +25,12 @@ Multiple status values can be provided with comma separated strings.
 ### Sample Request
 
 #### Request in cURL
-//Request URL to find pets with the status **available**: 
+The sample request URL  retrieves pets with the status **available**: 
 
     https://petstore.swagger.io/v2/pet/findByStatus?status=available
 
 #### Request in Java 
-// This code sample uses the 'Unirest' library: 
-// http://unirest.io/java.html 
+The sample request uses the 'Unirest' library  http://unirest.io/java.html  to retrieive pets with status **available**
 
     HttpResponse<String> response = Unirest.get("https://petstore.swagger.io/v2/pet/findByStatus") .header("Accept", "application/xml") .queryString("status", "{status}") .asString(); System.out.println(response.getBody());
 
@@ -98,6 +97,6 @@ The following is an example of a successful  response with status **available**:
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IFBldFN0b3JlXG5hdXRob3
 I6IFRydXB0aVxuc3RhdHVzOiBGcnN0IGRyYWZ0XG5kYXRlOiAy
-Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbLTEzNDI4MTk0MDgsLT
+Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbLTE0MDkyNTAwODgsLT
 Y2NzE2NjU5Nl19
 -->
