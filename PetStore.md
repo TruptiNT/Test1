@@ -1,5 +1,5 @@
 
-# Fetch a List of Pets
+# Get List of Pets
 
 This section describes the procedure to fetch a list of pets from the  [Swagger Pet store API](https://petstore.swagger.io/) through API interaction.
 
@@ -15,7 +15,7 @@ For this sample, you can use the API key `special-key` to test the authorization
 
 | Name|Description|Type  |Default|
 |--------|-------------------------------------------------------------------------------------------|------|------------|
-| *status |Status values that need to be considered for filter (values are: available, pending, sold). The field is mandatory |query | available
+| status |Status values that need to be considered for filter (values are: available, pending, sold). The field is mandatory |query | available
 
 
 ### Request
@@ -58,6 +58,7 @@ The following is an example of a successful  response with status **available**:
     ],
      }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MDkxMjQ5NSwtMTExMTU1ODMyMSwxMT
-A1NzEwMDc2LDE3NzM0NDM2ODYsMTQ1MDAxMTg2OF19
+eyJoaXN0b3J5IjpbLTE2MzUyMDM4NjgsMTQ4MDkxMjQ5NSwtMT
+ExMTU1ODMyMSwxMTA1NzEwMDc2LDE3NzM0NDM2ODYsMTQ1MDAx
+MTg2OF19
 -->
