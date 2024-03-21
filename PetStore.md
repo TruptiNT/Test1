@@ -50,10 +50,6 @@ Multiple status values can be provided with comma separated strings.
 
 #### cURL
 
-//Request URL to find pets with the status **available**: 
-
-    https://petstore.swagger.io/v2/pet/findByStatus?status=available
-    
 The following is an example of a successful  response with status **available**:
 
     {
@@ -75,6 +71,7 @@ The following is an example of a successful  response with status **available**:
      }
 
 #### Java
+The following is an example of a successful  response with status **available**:
 
     [
      { 
@@ -94,12 +91,13 @@ The following is an example of a successful  response with status **available**:
         } 
         ], 
         "status": "available" 
-        } ]
+        } 
+        ]
 
 
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IFBldFN0b3JlXG5hdXRob3
 I6IFRydXB0aVxuc3RhdHVzOiBGcnN0IGRyYWZ0XG5kYXRlOiAy
-Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbLTE5MDI3MDU4OTMsLT
-E5MjQ1ODc1NDUsODE2NTAyNDA2XX0=
+Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbLTY2NzE2NjU5NiwtMT
+kyNDU4NzU0NSw4MTY1MDI0MDZdfQ==
 -->
