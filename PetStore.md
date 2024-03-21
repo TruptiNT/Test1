@@ -1,99 +1,120 @@
+<!DOCTYPE html>
+<html>
 
-# Get List of Pets
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetStore</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
 
-This section describes the procedure to fetch a list of pets from the  [Swagger Pet store API](https://petstore.swagger.io/) through API interaction.
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="get-list-of-pets">Get List of Pets</h1>
+<p>This section describes the procedure to fetch a list of pets from the  <a href="https://petstore.swagger.io/">Swagger Pet store API</a> through API interaction.</p>
+<h3 id="description">Description</h3>
+<p>Finds pets by status.<br>
+Multiple status values can be provided with comma separated strings.<br>
+For this sample, use the API key <code>special-key</code> to test the authorization filters.</p>
+<h3 id="endpoint">Endpoint</h3>
+<pre><code>   GET /pet/findByStatus
+</code></pre>
+<h3 id="parameters">Parameters</h3>
 
-### Description
-Finds pets by status.
-Multiple status values can be provided with comma separated strings.
-For this sample, use the API key `special-key` to test the authorization filters.
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>Status values that need to be considered for filter (values are: available, pending, sold). The field is mandatory</td>
+<td>query</td>
+<td>available</td>
+</tr>
+</tbody>
+</table><h3 id="request">Request</h3>
+<h4 id="curl">curl</h4>
+<pre><code> curl -X 'GET' \
+      'https://petstore.swagger.io/v2/pet/findByStatus?status=available' \
+      -H 'accept: application/xml
+</code></pre>
+<h4 id="java">Java</h4>
+<p>// This code sample uses the ‘Unirest’ library:<br>
+// <a href="http://unirest.io/java.html">http://unirest.io/java.html</a></p>
+<pre><code>HttpResponse&lt;String&gt; response = Unirest.get("https://petstore.swagger.io/v2/pet/findByStatus") .header("Accept", "application/xml") .queryString("status", "{status}") .asString(); System.out.println(response.getBody());
+</code></pre>
+<h4 id="example-request">Example Request</h4>
+<p>Request URL to find pets with the status <strong>available</strong>:<br>
+<a href="https://petstore.swagger.io/v2/pet/findByStatus?status=available">https://petstore.swagger.io/v2/pet/findByStatus?status=available</a></p>
+<h3 id="response">Response</h3>
+<h4 id="response-codes">Response Codes</h4>
 
-### Endpoint
-       GET /pet/findByStatus
-
-### Parameters
-
-| Name|Description|Type  |Default|
-|--------|-------------------------------------------------------------------------------------------|------|------------|
-| status |Status values that need to be considered for filter (values are: available, pending, sold). The field is mandatory |query | available
-
-
-### Request
-
-#### curl
-
-     curl -X 'GET' \
-          'https://petstore.swagger.io/v2/pet/findByStatus?status=available' \
-          -H 'accept: application/xml
-          
-          
-   #### Java
-// This code sample uses the 'Unirest' library: 
-// http://unirest.io/java.html 
-
-    HttpResponse<String> response = Unirest.get("https://petstore.swagger.io/v2/pet/findByStatus") .header("Accept", "application/xml") .queryString("status", "{status}") .asString(); System.out.println(response.getBody());
-
-
-#### Example Request
-Request URL to find pets with the status **available**: 
-https://petstore.swagger.io/v2/pet/findByStatus?status=available
-
-### Response
-#### Response Codes
-
-| HTTP Code       |Description                          |           
-|--------------|-------------------------------|
-|200           |Successful operation   
-|400           |Invalid Status code
-
-#### Example Response
-The following is an example of a successful  response with status **available**:
-
-    {
-    "id": 1234,
-    "category": {
-    "id": 0,
-    "name": "Dog"
-     },
-    "name": "Zero",
-    "photoUrls": [
-     "string"
-     ],
-     "tags": [
-     {
-     "id": 0,
-     "name": "string"
-     }
-    ],
-     }
-
-he following is an example of a successful  response with status **available** in ***Java***
-
-      `[ 
-       { 
+<table>
+<thead>
+<tr>
+<th>HTTP Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Successful operation</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Invalid Status code</td>
+</tr>
+</tbody>
+</table><h4 id="example-response">Example Response</h4>
+<p>The following is an example of a successful  response with status <strong>available</strong>:</p>
+<pre><code>{
+"id": 1234,
+"category": {
+"id": 0,
+"name": "Dog"
+ },
+"name": "Zero",
+"photoUrls": [
+ "string"
+ ],
+ "tags": [
+ {
+ "id": 0,
+ "name": "string"
+ }
+],
+ }
+</code></pre>
+<p>he following is an example of a successful  response with status <strong>available</strong> in <em><strong>Java</strong></em></p>
+<pre><code>  `[ 
+   { 
+   "id": 2154, 
+   "category": { "id": 2154, "name": "&lt;string&gt;" }, 
+   "name": "doggie", 
+   "photoUrls": [ "&lt;string&gt;" ], 
+   "tags": 
+     [ 
+      { 
        "id": 2154, 
-       "category": { "id": 2154, "name": "<string>" }, 
-       "name": "doggie", 
-       "photoUrls": [ "<string>" ], 
-       "tags": 
-         [ 
-          { 
-           "id": 2154, 
-           "name": "<string>" 
-           } 
-          ], 
-          "status": "available" 
-         } 
-        ]` 
+       "name": "&lt;string&gt;" 
+       } 
+      ], 
+      "status": "available" 
+     } 
+    ]` 
+</code></pre>
+<h4 id="response-content-type">Response Content Type</h4>
+<ul>
+<li><code>application/xml</code></li>
+<li><code>application/json</code></li>
+</ul>
+</div>
+</body>
 
-
-#### Response Content Type
--   `application/xml`  
--   `application/json`
-
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2Mjg3MDYzMSwtMTE2NDIzOTQ5MCwtMT
-YzNTIwMzg2OCwxNDgwOTEyNDk1LC0xMTExNTU4MzIxLDExMDU3
-MTAwNzYsMTc3MzQ0MzY4NiwxNDUwMDExODY4XX0=
--->
+</html>
