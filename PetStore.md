@@ -1,74 +1,64 @@
-Get List of Pets</p>
-<p>
 
-This section describes the procedure to fetch a list of pets from the  <a href="https://petstore.swagger.io/">Swagger Pet store API</a> through API interaction.</p>
-</div><h3 id="descriptionfinds-pets-by-status.br">
-Description
-Finds pets by status<>
-Multiple status values can be provided with comma separated strings.<br><br>
-For this sample, use the API key <code>special-key</code> to test the authorization filters.</p>
-</h3><h3 id="endpoint">Endpoint</h3>
-<pre><code>   GET /pet/findByStatus
-</code></pre>
-<h3 id="parameters">Parameters</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description
-</th><th>Type</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>status</td>
-<td>Status values that need to be considered for filter (values are: available, pending, sold). The field is mandatory</td>
-<td>query</td>
-<td>available</td>
-</tr>
-</tbody>
-</table><h4 id="example-requesth4">4 id="examplerequesth4"Example Request</h4>
-<p>
-Request URL to find pets with the status <strong>**available</strong>:<br>
-<a href="https://petstore.swagger.io/v2/pet/findByStatus?status=available">https://petstore.swagger.io/v2/pet/findByStatus?status=available</a></p>
-<h3 id="response">Response</h3>
-<h4 id="response-codes">Response Codes</h4>
-<table>
-<thead>
-<tr>
-<th>HTTP Code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>200</td>
-<td>Successful operation</td>
-</tr>
-<tr>
-<td>400</td>
-<td>Invalid Status code</td>
-</tr>
-</tbody>
-</table><h4 id="example-response">**: 
+
+# Fetch a List of Pets
+
+This section describes the procedure to fetch a list of pets from the Swagger [Pet store API](https://petstore.swagger.io/) through API interaction.
+
+#### Endpoint
+       GET /pet/findByStatus
+
+#### Description
+Finds pets by status.
+Multiple status values can be provided with comma separated strings.
+
+#### Parameters
+
+| Name|Description|Type  |Default|
+|--------|-------------------------------------------------------------------------------------------|------|------------|
+| *status |Status values that need to be considered for filter (values are: available, pending, sold). The field is mandatory |query | available
+
+
+### Request
+https://petstore.swagger.io/v2/pet/findByStatus?status='status'
+
+#### Example Request
+Request URL to find pets with the status **available**: 
 https://petstore.swagger.io/v2/pet/findByStatus?status=available
-</h4><h3 id="response">Response</h3>
-<h4 id="response-codes">Response Codes</h4>| HTTP Code       |Description    }<br>
-|<br>
-|--------------|-------------------------------|<br>
-|200    
-||Successful operation
-|400           |Invalid Status codeExample Response
 
 
+### Response
 
-</div>
-</body>
+| HTTP Code       |Description                          |           
+|--------------|-------------------------------|
+|200           |Successful operation   
+|400           |Invalid Status code
 
-</html>
+#### Example Response
+The following is an example of a successful  response with status **available**:
+
+    {
+    "id": 1234,
+    "category": {
+    "id": 0,
+    "name": "Dog"
+     },
+    "name": "Zero",
+    "photoUrls": [
+     "string"
+     ],
+     "tags": [
+     {
+     "id": 0,
+     "name": "string"
+     }
+    ],
+     }
+
+> Written with [StackEdit](https://stackedit.io/).
+
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IFBldFN0b3JlXG5hdXRob3
 I6IFRydXB0aVxuc3RhdHVzOiBGcnN0IGRyYWZ0XG5kYXRlOiAy
-Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbODE2NTAyNDA2XX0=
+Mi0wMy0yMDI0XG4iLCJoaXN0b3J5IjpbLTE0MzcwNzk2MzQsOD
+E2NTAyNDA2XX0=
 -->
