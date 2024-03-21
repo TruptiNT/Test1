@@ -28,12 +28,16 @@ https://petstore.swagger.io/v2/pet/findByStatus?status=available
 
 ### Response
 #### curl
- curl -X 'GET' \
-      'https://petstore.swagger.io/v2/pet/findByStatus?status=available' \
-      -H 'accept: application/xml
+
+     curl -X 'GET' \
+          'https://petstore.swagger.io/v2/pet/findByStatus?status=available' \
+          -H 'accept: application/xml
 
 #### Java
-// This code sample uses the 'Unirest' library: // http://unirest.io/java.html `HttpResponse<String> response = Unirest.get("https://petstore.swagger.io/v2/pet/findByStatus") .header("Accept", "application/xml") .queryString("status", "{status}") .asString(); System.out.println(response.getBody());`
+// This code sample uses the 'Unirest' library: 
+// http://unirest.io/java.html 
+
+    HttpResponse<String> response = Unirest.get("https://petstore.swagger.io/v2/pet/findByStatus") .header("Accept", "application/xml") .queryString("status", "{status}") .asString(); System.out.println(response.getBody());
 
 #### Response Codes
 
@@ -87,8 +91,9 @@ he following is an example of a successful  response with status **available** i
 -   `application/xml`  
 -   `application/json`
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NDM2NzQ2MCwtMTE2NDIzOTQ5MCwtMT
-YzNTIwMzg2OCwxNDgwOTEyNDk1LC0xMTExNTU4MzIxLDExMDU3
-MTAwNzYsMTc3MzQ0MzY4NiwxNDUwMDExODY4XX0=
+eyJoaXN0b3J5IjpbLTUyNzYxOTkyLC0xMTY0MjM5NDkwLC0xNj
+M1MjAzODY4LDE0ODA5MTI0OTUsLTExMTE1NTgzMjEsMTEwNTcx
+MDA3NiwxNzczNDQzNjg2LDE0NTAwMTE4NjhdfQ==
 -->
